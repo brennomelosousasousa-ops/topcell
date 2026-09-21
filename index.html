@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="TopCell - Celulares, acessórios e assistência técnica em Pires do Rio - GO."
+    >
+
+    <title>TopCell | Celulares e Assistência Técnica</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Ícones -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                TOP<span>CELL</span>
+            </a>
+
+            <nav class="nav" id="nav">
+
+                <a href="#inicio">Início</a>
+
+                <a href="#novidades">Novidades</a>
+
+                <a href="#assistencia">Assistência</a>
+
+                <a href="#produtos">Produtos</a>
+
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+            <a
+                href="https://wa.me/5564999999999"
+                target="_blank"
+                class="header-button"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                Fale conosco
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Abrir menu"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-tag">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Pires do Rio - GO
+                    </span>
+
+                    <h1>
+                        Tecnologia,
+                        <span>assistência</span>
+                        e celulares em um só lugar.
+                    </h1>
+
+                    <p>
+                        Na TopCell você encontra celulares novos e usados,
+                        acessórios e assistência técnica para o seu aparelho.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#novidades" class="button button-red">
+                            Ver novidades
+                        </a>
+
+                        <a href="#assistencia" class="button button-outline">
+                            Nossa assistência
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-decoration">
+
+                    <div class="phone-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+
+                    <div class="hero-circle"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CARROSSEL
+        ========================== -->
+
+        <section class="novidades" id="novidades">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        DESTAQUES DA SEMANA
+                    </span>
+
+                    <h2>
+                        Novidades da semana
+                        <span>🔥</span>
+                    </h2>
+
+                    <p>
+                        Confira algumas das novidades que chegaram na TopCell.
+                    </p>
+
+                </div>
+
+
+                <div class="carousel">
+
+                    <!-- IMAGEM 1 -->
+                    <div class="slide active">
+
+                        <img
+                            src="images/novidades/novidade-1.png"
+                            alt="Novidades em capinhas TopCell"
+                        >
+
+                        <div class="slide-overlay">
+
+                            <div>
+                                <span>TOPCELL</span>
+
+                                <h3>
+                                    Capinhas para seu celular
+                                </h3>
+
+                                <p>
+                                    Modelos variados para proteger seu aparelho.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGEM 2 -->
+                    <div class="slide">
+
+                        <img
+                            src="images/novidades/novidade-2.png"
+                            alt="Capinhas personalizadas TopCell"
+                        >
+
+                        <div class="slide-overlay">
+
+                            <div>
+                                <span>NOVIDADE</span>
+
+                                <h3>
+                                    Novos modelos disponíveis
+                                </h3>
+
+                                <p>
+                                    Escolha seu estilo e proteja seu celular.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGEM 3 -->
+                    <div class="slide">
+
+                        <img
+                            src="images/novidades/novidade-3.png"
+                            alt="Capinhas para smartphones"
+                        >
+
+                        <div class="slide-overlay">
+
+                            <div>
+                                <span>NA TOPCELL</span>
+
+                                <h3>
+                                    Variedade de modelos
+                                </h3>
+
+                                <p>
+                                    Venha conferir as novidades da semana.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SETA ESQUERDA -->
+
+                    <button
+                        class="carousel-button prev"
+                        id="prevButton"
+                        aria-label="Imagem anterior"
+                    >
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+
+                    <!-- SETA DIREITA -->
+
+                    <button
+                        class="carousel-button next"
+                        id="nextButton"
+                        aria-label="Próxima imagem"
+                    >
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+
+                    <!-- BOLINHAS -->
+
+                    <div class="carousel-dots" id="carouselDots">
+
+                        <button
+                            class="dot active"
+                            data-slide="0"
+                            aria-label="Ir para imagem 1"
+                        ></button>
+
+                        <button
+                            class="dot"
+                            data-slide="1"
+                            aria-label="Ir para imagem 2"
+                        ></button>
+
+                        <button
+                            class="dot"
+                            data-slide="2"
+                            aria-label="Ir para imagem 3"
+                        ></button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ASSISTÊNCIA TÉCNICA
+        ========================== -->
+
+        <section class="assistencia" id="assistencia">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        ASSISTÊNCIA TÉCNICA
+                    </span>
+
+                    <h2>
+                        Seu celular com quem entende.
+                    </h2>
+
+                    <p>
+                        Conte com a TopCell para cuidar do seu aparelho.
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO DO TÉCNICO -->
+
+                <div class="technician-card">
+
+                    <img
+                        src="images/tecnico.png"
+                        alt="Técnico da TopCell"
+                        class="technician-image"
+                    >
+
+                    <!-- OVERLAY QUE APARECE NO HOVER -->
+
+                    <div class="technician-overlay">
+
+                        <div class="technician-content">
+
+                            <span class="technician-label">
+                                TOPCELL
+                            </span>
+
+                            <h3>
+                                Assistência técnica
+                            </h3>
+
+                            <p>
+                                Cuidamos do seu celular com atenção e profissionalismo.
+                            </p>
+
+                            <div class="repair-list">
+
+                                <div class="repair-item">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <span>Troca de tela</span>
+                                </div>
+
+                                <div class="repair-item">
+                                    <i class="fa-solid fa-battery-half"></i>
+                                    <span>Troca de bateria</span>
+                                </div>
+
+                                <div class="repair-item">
+                                    <i class="fa-solid fa-plug"></i>
+                                    <span>Problemas no conector</span>
+                                </div>
+
+                                <div class="repair-item">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                    <span>Diagnóstico e manutenção</span>
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="https://wa.me/5564999999999"
+                                target="_blank"
+                                class="button button-red"
+                            >
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Solicitar orçamento
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMAÇÕES ABAIXO DA FOTO -->
+
+                <div class="repair-introduction">
+
+                    <h3>
+                        Cuidamos do seu celular
+                    </h3>
+
+                    <p>
+                        Seu aparelho apresentou algum problema?
+                        Nossa assistência técnica realiza avaliação
+                        e reparos para devolver o funcionamento do seu celular.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVIÇOS -->
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <h3>
+                            Troca de tela
+                        </h3>
+
+                        <p>
+                            Para telas quebradas, trincadas ou com problemas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-battery-half"></i>
+                        </div>
+
+                        <h3>
+                            Troca de bateria
+                        </h3>
+
+                        <p>
+                            Para aparelhos com bateria desgastada ou baixa autonomia.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+
+                        <h3>
+                            Problemas no conector
+                        </h3>
+
+                        <p>
+                            Para celulares que não carregam ou apresentam falhas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <h3>
+                            Diagnóstico
+                        </h3>
+
+                        <p>
+                            Avaliação para identificar possíveis problemas no aparelho.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUTOS
+        ========================== -->
+
+        <section class="produtos" id="produtos">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        PRODUTOS
+                    </span>
+
+                    <h2>
+                        Produtos TopCell
+                    </h2>
+
+                    <p>
+                        Tudo o que você precisa para proteger,
+                        carregar e aproveitar melhor o seu celular.
+                    </p>
+
+                </div>
+
+
+                <div class="products-grid">
+
+                    <div class="product-category">
+
+                        <div class="product-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h3>
+                            Carregadores
+                        </h3>
+
+                        <p>
+                            Carregadores e fontes para diferentes modelos.
+                        </p>
+
+                        <a href="#contato">
+                            Tenho interesse
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="product-category">
+
+                        <div class="product-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h3>
+                            Películas
+                        </h3>
+
+                        <p>
+                            Proteção para a tela do seu smartphone.
+                        </p>
+
+                        <a href="#contato">
+                            Tenho interesse
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="product-category">
+
+                        <div class="product-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+
+                        <h3>
+                            Capinhas
+                        </h3>
+
+                        <p>
+                            Modelos variados para diferentes celulares.
+                        </p>
+
+                        <a href="#contato">
+                            Tenho interesse
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="product-category">
+
+                        <div class="product-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <h3>
+                            Celulares usados
+                        </h3>
+
+                        <p>
+                            Aparelhos usados disponíveis na loja.
+                        </p>
+
+                        <a href="#contato">
+                            Ver aparelhos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="product-category">
+
+                        <div class="product-icon">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+
+                        <h3>
+                            Celulares novos
+                        </h3>
+
+                        <p>
+                            Encontre seu próximo smartphone.
+                        </p>
+
+                        <a href="#contato">
+                            Ver aparelhos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DIFERENCIAIS
+        ========================== -->
+
+        <section class="diferenciais">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        TOPCELL
+                    </span>
+
+                    <h2>
+                        Por que escolher a TopCell?
+                    </h2>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-handshake"></i>
+
+                        <h3>
+                            Atendimento de confiança
+                        </h3>
+
+                        <p>
+                            Atendimento próximo e personalizado.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                        <h3>
+                            Assistência técnica
+                        </h3>
+
+                        <p>
+                            Serviços para manter seu celular funcionando.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                        <h3>
+                            Produtos
+                        </h3>
+
+                        <p>
+                            Acessórios e celulares para diferentes necessidades.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>
+                            Pires do Rio
+                        </h3>
+
+                        <p>
+                            Atendimento presencial na cidade.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta">
+
+            <div class="container cta-content">
+
+                <div>
+
+                    <span>
+                        TOPCELL
+                    </span>
+
+                    <h2>
+                        Precisa de um celular,
+                        acessório ou assistência?
+                    </h2>
+
+                    <p>
+                        Fale com a TopCell e descubra a melhor opção para você.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/5564999999999"
+                    target="_blank"
+                    class="button button-white"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Falar no WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer" id="contato">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo">
+                    TOP<span>CELL</span>
+                </a>
+
+                <p>
+                    Celulares • Acessórios • Assistência Técnica
+                </p>
+
+                <span>
+                    Pires do Rio - GO
+                </span>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#novidades">
+                    Novidades
+                </a>
+
+                <a href="#assistencia">
+                    Assistência
+                </a>
+
+                <a href="#produtos">
+                    Produtos
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contato
+                </h3>
+
+                <a href="https://wa.me/5564999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    @topcell
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TopCell. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
