@@ -1,0 +1,1552 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #151515;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+
+    --red: #e5092f;
+
+    --red-dark: #bd0626;
+
+    --black: #111111;
+
+    --dark: #181818;
+
+    --white: #ffffff;
+
+    --gray: #666666;
+
+    --light-gray: #f5f5f5;
+
+    --border: #e7e7e7;
+
+    --container: 1180px;
+
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: min(92%, var(--container));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-content {
+
+    height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+
+    color: var(--black);
+}
+
+.logo span {
+    color: var(--red);
+}
+
+
+/* NAV */
+
+.nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-left: auto;
+}
+
+.nav a {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #444;
+
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: var(--red);
+}
+
+
+/* HEADER BUTTON */
+
+.header-button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    background: var(--red);
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background: var(--red-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* MENU MOBILE */
+
+.menu-button {
+
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(229, 9, 47, 0.13),
+            transparent 35%
+        ),
+        #ffffff;
+
+    overflow: hidden;
+}
+
+.hero-content {
+
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.8fr;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.hero-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--red);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+
+    max-width: 680px;
+
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 1.03;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--red);
+}
+
+.hero p {
+
+    max-width: 600px;
+
+    color: var(--gray);
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding: 0 22px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.button-red {
+
+    background: var(--red);
+
+    color: white;
+}
+
+.button-red:hover {
+
+    background: var(--red-dark);
+
+    transform: translateY(-3px);
+}
+
+.button-outline {
+
+    border: 1px solid #d8d8d8;
+
+    color: var(--black);
+
+    background: white;
+}
+
+.button-outline:hover {
+
+    border-color: var(--red);
+
+    color: var(--red);
+}
+
+
+/* HERO DECORAÇÃO */
+
+.hero-decoration {
+
+    position: relative;
+
+    height: 450px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.hero-circle {
+
+    position: absolute;
+
+    width: 380px;
+
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+
+    opacity: 0.09;
+}
+
+.phone-icon {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 190px;
+
+    height: 350px;
+
+    border: 8px solid var(--black);
+
+    border-radius: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #333,
+        #111
+    );
+
+    color: var(--red);
+
+    font-size: 90px;
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.25);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    padding: 100px 0;
+}
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.section-label {
+
+    display: inline-block;
+
+    color: var(--red);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+
+    color: var(--gray);
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   NOVIDADES
+========================= */
+
+.novidades {
+    background: var(--light-gray);
+}
+
+
+/* CARROSSEL */
+
+.carousel {
+
+    position: relative;
+
+    width: 100%;
+
+    height: min(65vw, 600px);
+
+    min-height: 350px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #111;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.16);
+}
+
+
+/* SLIDES */
+
+.slide {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: scale(1.03);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.8s ease,
+        visibility 0.6s;
+}
+
+.slide.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: scale(1);
+}
+
+.slide img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* OVERLAY */
+
+.slide::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.7),
+            transparent 60%
+        );
+}
+
+.slide-overlay {
+
+    position: absolute;
+
+    z-index: 2;
+
+    bottom: 50px;
+
+    left: 50px;
+
+    right: 50px;
+
+    color: white;
+}
+
+.slide-overlay span {
+
+    color: #ff4966;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.slide-overlay h3 {
+
+    font-size: clamp(25px, 4vw, 42px);
+
+    margin: 8px 0;
+
+}
+
+.slide-overlay p {
+
+    color: rgba(255,255,255,0.85);
+
+    max-width: 500px;
+}
+
+
+/* SETAS */
+
+.carousel-button {
+
+    position: absolute;
+
+    z-index: 5;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    background: rgba(0,0,0,0.45);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.carousel-button:hover {
+
+    background: var(--red);
+
+    border-color: var(--red);
+}
+
+.carousel-button.prev {
+    left: 20px;
+}
+
+.carousel-button.next {
+    right: 20px;
+}
+
+
+/* BOLINHAS */
+
+.carousel-dots {
+
+    position: absolute;
+
+    z-index: 5;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.dot {
+
+    width: 9px;
+
+    height: 9px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.5);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.dot.active {
+
+    width: 28px;
+
+    border-radius: 10px;
+
+    background: var(--red);
+}
+
+
+/* =========================
+   ASSISTÊNCIA
+========================= */
+
+.assistencia {
+    background: white;
+}
+
+
+/* TÉCNICO */
+
+.technician-card {
+
+    position: relative;
+
+    width: min(100%, 950px);
+
+    height: 600px;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #111;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.16);
+}
+
+.technician-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 25%;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+
+/* OVERLAY */
+
+.technician-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(229,9,47,0.92),
+            rgba(10,10,10,0.94)
+        );
+
+    opacity: 0;
+
+    transition: 0.5s ease;
+}
+
+
+/* HOVER */
+
+.technician-card:hover .technician-image {
+
+    transform: scale(1.08);
+
+    filter: brightness(0.65);
+}
+
+.technician-card:hover .technician-overlay {
+
+    opacity: 1;
+}
+
+
+/* CONTEÚDO */
+
+.technician-content {
+
+    max-width: 600px;
+
+    color: white;
+
+    text-align: center;
+
+    transform: translateY(20px);
+
+    transition: 0.5s;
+}
+
+.technician-card:hover .technician-content {
+
+    transform: translateY(0);
+}
+
+.technician-label {
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.technician-content h3 {
+
+    font-size: clamp(32px, 5vw, 52px);
+
+    margin: 10px 0;
+}
+
+.technician-content p {
+
+    color: rgba(255,255,255,0.85);
+
+    margin-bottom: 25px;
+}
+
+
+/* LISTA DOS REPAROS */
+
+.repair-list {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.repair-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.08);
+
+    text-align: left;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.repair-item i {
+
+    color: white;
+
+    width: 20px;
+}
+
+
+/* TEXTO ABAIXO */
+
+.repair-introduction {
+
+    max-width: 700px;
+
+    margin: 55px auto 40px;
+
+    text-align: center;
+}
+
+.repair-introduction h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.repair-introduction p {
+
+    color: var(--gray);
+
+    line-height: 1.7;
+}
+
+
+/* SERVICES */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.service-card {
+
+    padding: 30px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color: var(--red);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(229,9,47,0.1);
+
+    color: var(--red);
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.service-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos {
+
+    background: var(--light-gray);
+}
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 16px;
+}
+
+.product-category {
+
+    padding: 30px 22px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    border: 1px solid var(--border);
+
+    transition: 0.3s;
+}
+
+.product-category:hover {
+
+    transform: translateY(-6px);
+
+    border-color: var(--red);
+}
+
+.product-icon {
+
+    color: var(--red);
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.product-category h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.product-category p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.product-category a {
+
+    color: var(--red);
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   DIFERENCIAIS
+========================= */
+
+.diferenciais {
+
+    background: white;
+}
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.feature {
+
+    text-align: center;
+}
+
+.feature > i {
+
+    font-size: 28px;
+
+    color: var(--red);
+
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+    padding: 70px 0;
+
+    background: var(--red);
+
+    color: white;
+}
+
+.cta-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.cta span {
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.cta h2 {
+
+    max-width: 650px;
+
+    font-size: clamp(30px, 5vw, 45px);
+
+    letter-spacing: -2px;
+
+    margin: 10px 0;
+}
+
+.cta p {
+
+    color: rgba(255,255,255,0.85);
+}
+
+.button-white {
+
+    background: white;
+
+    color: var(--red);
+
+    white-space: nowrap;
+}
+
+.button-white:hover {
+
+    transform: translateY(-3px);
+
+    background: #f4f4f4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    background: var(--black);
+
+    color: white;
+
+    padding-top: 70px;
+}
+
+.footer-content {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 60px;
+}
+
+.footer .logo {
+    color: white;
+}
+
+.footer-brand p {
+
+    color: #aaa;
+
+    margin: 15px 0 8px;
+
+    font-size: 14px;
+}
+
+.footer-brand > span {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+.footer h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.footer-links,
+.footer-contact {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-links a,
+.footer-contact a {
+
+    color: #999;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+
+    color: white;
+}
+
+.footer-contact i {
+
+    width: 20px;
+
+    color: var(--red);
+}
+
+.footer-bottom {
+
+    border-top: 1px solid #292929;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .nav {
+        gap: 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .header-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav {
+
+        position: absolute;
+
+        top: 78px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background: white;
+
+        border-bottom: 1px solid var(--border);
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .hero-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-text {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .cta-content {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-content {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .header-content {
+        height: 70px;
+    }
+
+    .nav {
+        top: 70px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        min-height: auto;
+
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+    .carousel {
+
+        height: 115vw;
+
+        min-height: 400px;
+
+        border-radius: 14px;
+    }
+
+    .slide img {
+        object-position: center;
+    }
+
+    .slide-overlay {
+
+        left: 20px;
+
+        right: 20px;
+
+        bottom: 45px;
+    }
+
+    .slide-overlay h3 {
+        font-size: 26px;
+    }
+
+    .carousel-button {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+    .carousel-button.prev {
+        left: 10px;
+    }
+
+    .carousel-button.next {
+        right: 10px;
+    }
+
+
+    /* TÉCNICO */
+
+    .technician-card {
+
+        height: 600px;
+
+        border-radius: 14px;
+    }
+
+    .technician-overlay {
+
+        padding: 25px;
+
+        opacity: 0;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(229,9,47,0.94),
+                rgba(10,10,10,0.95)
+            );
+    }
+
+    /*
+       No celular o overlay aparece
+       quando a classe "touch-active"
+       é adicionada pelo JavaScript.
+    */
+
+    .technician-card.touch-active .technician-overlay {
+
+        opacity: 1;
+    }
+
+    .technician-card.touch-active .technician-image {
+
+        transform: scale(1.05);
+
+        filter: brightness(0.65);
+    }
+
+    .repair-list {
+
+        grid-template-columns: 1fr;
+    }
+
+    .repair-item {
+
+        padding: 11px;
+
+        font-size: 12px;
+    }
+
+
+    /* SERVIÇOS */
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PRODUTOS */
+
+    .products-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* DIFERENCIAIS */
+
+    .features-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technician-card {
+        height: 570px;
+    }
+
+}
